@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Penumbra: The Universal Information Shadow of Non-Boolean Projection"
+message: "If you use this work, please cite it as below."
+type: software
+authors:
+  - given-names: Goodman
+    affiliation: Apoth3osis
+license: Apoth3osis License Stack v1
+repository-code: "https://github.com/Abraxas1010/penumbra-lean"
+keywords:
+  - Heyting algebra
+  - nucleus operator
+  - information gap
+  - Lean 4
+  - formal verification
+  - non-Boolean projection
+  - mathematical physics
+  - machine-checked proofs
