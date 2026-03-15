@@ -15,6 +15,7 @@ We humbly thank the collective intelligence of humanity for providing the techno
 ---
 
 [![License: Apoth3osis License Stack v1](https://img.shields.io/badge/License-Apoth3osis%20License%20Stack%20v1-blue.svg)](LICENSE.md)
+[![Lean Build](https://github.com/Abraxas1010/penumbra-lean/actions/workflows/lean.yml/badge.svg)](https://github.com/Abraxas1010/penumbra-lean/actions/workflows/lean.yml)
 
 # Penumbra: The Universal Information Shadow of Non-Boolean Projection
 
@@ -66,7 +67,7 @@ Let L be a Heyting algebra and R : L → L a nucleus (monotone, inflationary, id
 - `certificate_gap_nonzero` — certificate of positive gap
 - `graftBoundaryNucleus_not_boolean` — grafted boundary nucleus is non-Boolean
 
-**Files:** `HeytingLean/HossenfelderNoGo/` (12 files, ~492 lines), `HeytingLean/NucleusGrafting/` (4 files, ~298 lines)
+**Files:** `HeytingLean/HossenfelderNoGo/` (12 files, ~492 lines)
 
 ### Layer 3: Wolfram Causal Confluence (Independence)
 
@@ -79,9 +80,22 @@ Let L be a Heyting algebra and R : L → L a nucleus (monotone, inflationary, id
 
 **Files:** `HeytingLean/WPP/Wolfram/` (8 files, ~1,826 lines), `HeytingLean/Generative/WolframBridge/` (4 files)
 
+### Layer 4: Neural Networks / Nucleus Grafting (qReLU)
+
+**Claim:** Quantized ReLU (qReLU) satisfies all nucleus axioms on discrete integer lattices. The gap between pre- and post-activation values is the Heyting gap instantiated in neural network form.
+
+**Key theorems:**
+- `qRelu_extensive` — qReLU is inflationary (x ≤ qReLU(x))
+- `qRelu_idempotent` — qReLU is idempotent
+- `qRelu_meet_preserving` — qReLU preserves meets
+- `certificate_gap_nonzero` — certificate of positive gap
+- `graftBoundaryNucleus_not_boolean` — grafted boundary nucleus is non-Boolean
+
+**Files:** `HeytingLean/NucleusGrafting/` (4 files, ~298 lines)
+
 ### Layer 5: Two-Clock Physics (Al-Mayahi UDT)
 
-**Claim:** Al-Mayahi's Undifferentiated Distinction Theory (UDT) projects a single τ-clock onto observer-local (t, x) coordinates. The projection operator is a nucleus; the gap between τ-evolution and (t, x)-evolution is the Heyting gap instantiated in relativistic kinematics.
+**Claim:** Al-Mayahi's Union Dipole Theory (UDT) projects a single τ-clock onto observer-local (t, x) coordinates. The projection operator is a nucleus; the gap between τ-evolution and (t, x)-evolution is the Heyting gap instantiated in relativistic kinematics.
 
 **Key theorems:**
 - `tau_projection_is_nucleus` — the τ → t projection is a nucleus
@@ -141,7 +155,7 @@ Let L be a Heyting algebra and R : L → L a nucleus (monotone, inflationary, id
 
 | Connection | Bridges | Key Result |
 |:-----------|:--------|:-----------|
-| A: Neural ↔ Spacetime | Layers 2, 3 | qReLU gap = Hossenfelder gap = Wolfram fixed-point obstruction |
+| A: Neural ↔ Spacetime | Layers 2, 3, 4 | qReLU gap = Hossenfelder gap = Wolfram fixed-point obstruction |
 | B: Oscillation ↔ Spinor | Layers 0, 1 | Re-entry involution carries SU(2) |
 | C: τ-Clock ↔ RG Flow | Layers 5, F | τ-projection and RG flow are both nuclear projections |
 | D: Fluid ↔ Control | Layers 6, 7 | Undecidability boundary = saturation boundary |
@@ -189,6 +203,10 @@ This synthesis builds on and formalizes work from:
 | **Penrose** | Mathematical physics | Spinor-flag structure (Layer 1 bridge) |
 | **Wolfram** | Computational physics | Multiway causal invariance (Layer 3) |
 | **Goodman / Apoth3osis** | Synthesis | Nucleus-as-universal-gap unification |
+
+## Development Provenance
+
+This repository was extracted from the [HeytingLean](https://github.com/Abraxas1010/HeytingLean) monorepo using automated transitive import tracing. Development history spanning December 2025 through March 2026 is preserved in the internal repository. The single-commit structure of this extracted repo reflects the extraction process, not the development workflow. The authoritative test is `lake build`, which does not depend on git history.
 
 ## License
 
