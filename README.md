@@ -15,7 +15,6 @@ We humbly thank the collective intelligence of humanity for providing the techno
 ---
 
 [![License: Apoth3osis License Stack v1](https://img.shields.io/badge/License-Apoth3osis%20License%20Stack%20v1-blue.svg)](LICENSE.md)
-[![Lean Build](https://github.com/Abraxas1010/penumbra-lean/actions/workflows/lean.yml/badge.svg)](https://github.com/Abraxas1010/penumbra-lean/actions/workflows/lean.yml)
 
 # Penumbra: The Universal Information Shadow of Non-Boolean Projection
 
