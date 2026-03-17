@@ -1,27 +1,13 @@
-/-!
-# Penumbra: The Universal Information Shadow of Non-Boolean Projection
-
-This barrel file imports the complete 10-layer synthesis chain.
-Building this file (`lake build Penumbra`) verifies all declarations
-across all layers are sorry-free and type-correct.
-
-## The Central Result
-
-Every non-Boolean nucleus R on a Heyting algebra L produces an irreducible
-information gap: the boundary ∂Ω_R = {x ∈ L : R(x) ≠ x ∧ R(x) ≠ ⊤} is
-non-empty. This gap appears identically across:
-
-- Neural network quantization (qReLU as nucleus)
-- Spacetime structure (Hossenfelder no-go)
-- Fluid dynamics (Turing-complete undecidability)
-- Matter stability (prime rotational periods)
-- Dimensional emergence (SU(2) from re-entry)
-- Causal invariance (Wolfram confluence independence)
-- Spinor structure (Penrose bridge)
-- Controlled system saturation (PM-bounded τ-control)
-- Asymptotic safety (RG fixed points = Ω_R)
-- Two-clock physics (Al-Mayahi UDT projection)
--/
+-- Penumbra: The Universal Information Shadow of Non-Boolean Projection
+--
+-- This barrel file imports the complete synthesis chain.
+-- Building this file (`lake build Penumbra`) verifies all declarations
+-- across the currently shipped layers are sorry-free and type-correct.
+--
+-- Central thesis:
+-- every non-Boolean nucleus R on a Heyting algebra L produces an irreducible
+-- information gap, and the Penumbra programme tracks computational, geometric,
+-- and physical shadows of that gap across the imported layers below.
 
 -- ════════════════════════════════════════════════════════════════
 -- Foundation
@@ -33,6 +19,16 @@ import HeytingLean.Core.Nucleus
 -- ════════════════════════════════════════════════════════════════
 import HeytingLean.Generative.NoneistOscillation
 import HeytingLean.Generative.ReEntryPlane
+import Penumbra.ReentryNonOrientable
+import Penumbra.MobiusSO4Embedding
+import Penumbra.SO4Decomposition
+import Penumbra.AntiSelfDualUniqueness
+import Penumbra.MonotoneTauLimit
+import Penumbra.AntiSelfDualProjection
+import Penumbra.LyapunovClassifierBoundary
+import Penumbra.MonotoneCouplingObstruction
+import Penumbra.AlphaRunningFrozen
+import Penumbra.SU2Emergence
 import HeytingLean.Generative.SpatialClosure
 import HeytingLean.Generative.FourDBarrier
 import HeytingLean.Generative.UDPGeometry
