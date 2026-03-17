@@ -161,6 +161,45 @@ Let L be a Heyting algebra and R : L → L a nucleus (monotone, inflationary, id
 | E: Born Rule ↔ Stability | Layer 8 | Surviving fraction under nucleus = Born probability |
 | F: Prime Period ↔ Mass | Layer 8 | Mass = trapped asymmetry at prime period > 1 |
 
+## Empirical Validation Programme
+
+Independent of the formal synthesis, the Penumbra programme runs a deterministic Rust test harness ([penumbra-experiments](https://github.com/Abraxas1010/penumbra-experiments)) against 21 dynamical systems spanning integrable and chaotic regimes. All experiments use pre-registered thresholds, exact permutation statistics, and honest verdict logic.
+
+### Stable Passes
+
+| Experiment | Verdict | Key Measurement |
+|:-----------|:--------|:----------------|
+| Bitwidth Monotonicity | **Pass** | Gap ratio decreases strictly with increasing bitwidth |
+| Born Ground-State Correspondence | **Pass** | Hydrogen 1s RMS error 0.33% (ground state only) |
+| Mobius → SU(2) Emergence | **Pass** | Lean-verified algebraic chain |
+| Wolfram Confluence-Causality Gap | **Pass** | Real correlation between computational depth and gap ratio |
+| Binary LOSO Classifier (21 substrates) | **Pass** | KNN held-out-substrate accuracy 0.810 |
+| Binary Gap Ratio (21 substrates) | **Pass** | Chaotic CV 0.291 < 0.30 gate; exact Welch *p* = 1.87 × 10⁻³ over 116,280 permutations |
+
+### Permanent Closures
+
+| Lane | Verdict | Reason |
+|:-----|:--------|:-------|
+| Mass Hierarchy Modulations | **Fail** | Required f(3)/f(2) = 0.00725, but monotone families force ≥ 1. Lean-proved impossibility. |
+| Born Excited States | **Fail** | Detector fitted on 1s cannot produce the 2s radial node or 2p angular boundary |
+| Three-Class Taxonomy | **Fail** | "Nested" class statistically indistinguishable from "classical" under LOSO |
+| Class-Conditional Universality | **Fail** | Within-class CV > 1.0; gap ratio separable between but not universal within classes |
+
+### Lean Formal Verification (Empirical Programme)
+
+| Module | Verdict | Contribution |
+|:-------|:--------|:-------------|
+| `Penumbra.LyapunovClassifierBoundary` | **Pass** | Exhaustive 21-case proof: integrable/chaotic boundary = sign partition of max Lyapunov exponent |
+| `Penumbra.MonotoneCouplingObstruction` | **Pass** | Algebraic proof: monotone-increasing couplings cannot achieve f(3)/f(2) < 1 |
+
+### The 21-Substrate Ensemble
+
+**Integrable** (λ_max ≤ 0): Tau Field, RG Flow, Neural qReLU, Harmonic Oscillator, Coulomb Projection, Standing Wave, Coupled Oscillators
+
+**Chaotic** (λ_max > 0): Lorenz, Chua Circuit, Standard Map, Double Pendulum, Henon Map, Logistic Map, Rossler, Tinkerbell Map, Ikeda Map, Duffing Oscillator, Thomas Attractor, Chen System, Sprott B, Rabinovich-Fabrikant
+
+**Methodology:** Pre-registered thresholds (CV < 0.30, *p* < 0.01, accuracy ≥ 0.65). Exact combinatorial permutation tests over all C(21,7) = 116,280 partitions. Deterministic Rust. Two independent adversarial audits with byte-identical reproduction.
+
 ## Build & Verify
 
 **Prerequisites:** [elan](https://github.com/leanprover/elan) (Lean version manager)
